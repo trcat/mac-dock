@@ -1,0 +1,43 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 15px;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.dock {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.dock li {
+  height: 112px;
+  padding: 20px;
+  --scale: 1;
+  font-size: calc(6rem * var(--scale));
+  transition: 15ms all ease-in;
+  position: relative;
+  top: calc(6rem - 6rem * var(--scale));
+}
